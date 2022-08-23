@@ -27,7 +27,7 @@ export class RenderComponent implements OnInit {
     this.camera.attachControl(this.canvas.nativeElement, true);
 
     // create minial scene
-    this.createCamera(this.scene);
+    this.createScene(this.scene, this.canvas.nativeElement);
 
     this.engine.runRenderLoop(()=>{
       this.scene.render();
